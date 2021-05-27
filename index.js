@@ -26,3 +26,9 @@ acc.forEach((acc) => {
     acc.nextElementSibling.classList.toggle('active'));
 })
 
+const cart = document.querySelector("aside");
+const toggle = document.querySelector(".sbagtoggle")
+
+toggle.addEventListener('click',()=>{
+    cart.classList.toggle("toggle")
+})

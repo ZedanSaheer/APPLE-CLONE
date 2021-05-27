@@ -23,7 +23,7 @@ header{
     position: fixed;
     backdrop-filter: blur(30px) contrast(.8);
     top: 0;
-    z-index: 99999;
+    z-index: 99998;
 }
 .nav-mobile{
     display: flex;
@@ -77,9 +77,7 @@ header{
     background: url(apple.svg);
     background-repeat: no-repeat;
     background-position:center;
-    background-size: 3vh;    
-    position: relative;
-    left: 2vw;
+    background-size: 3vh;
 }
 
 .mobile-applebag{
@@ -93,6 +91,79 @@ header{
 .mobile-applebag.active{
     opacity: 0;
     transition: opacity .3s;
+}
+.sbagtoggle{
+    position: relative;
+    top: 2vh;
+    left: 25vw;
+    height: 30px;
+    width: 30px;
+}
+
+aside{
+    top: 8vh;
+    right: 0;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    display: none;
+}
+
+aside.toggle{
+    display: block;
+}
+
+.scontainer{
+    width: 100%;
+}
+.tricont{
+    width: 100%;
+}
+.shoppingcarttriangle{
+    position: relative;
+    bottom: .50vh;
+    right: 7vw;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    float: right;
+    transform:rotate(45deg);
+    z-index:99999;
+}
+.shoppingcart{
+    display: flex;
+    flex-direction: column;
+}
+.scsecone{
+    font-size: 1.5rem;
+    color: rgb(116,116,119);
+    text-align: center;
+    margin-top: 4vh;
+    margin-bottom: 3vh;
+}
+
+.scul{
+    padding-left: 7vw;
+    margin-bottom: 2vh;
+}
+.sculli{
+    padding-top: 1vh;
+    margin: 2vh 3vw;
+    list-style: none; 
+    border-top: 1px solid rgb(208, 208, 214);
+
+}
+#bagsvg{
+    height: 20px;
+    width: 40px;
+}
+
+.sculli a{
+    position: relative;
+    bottom: .60vh;
+    text-decoration: none;
+    color: rgb(41,151,255);
+    font-size: 1.4rem;
 }
 .headertext{
     background-color: rgb(245,245,247);
@@ -242,6 +313,7 @@ div.mobile.menunavlinks.active {
     color:rgb(41,151,255);
     flex: 1;
     display: flex;
+    z-index: -1;
 }
 .linksipad1{
     justify-content: flex-end;
