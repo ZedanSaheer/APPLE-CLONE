@@ -23,6 +23,7 @@ header{
     position: fixed;
     backdrop-filter: blur(30px) contrast(.8);
     top: 0;
+    height: 65px;
     z-index: 99996;
 }
 .nav-mobile{
@@ -205,7 +206,7 @@ div.mobile.menunavlinks{
     color: white;
     overflow: hidden;
     position: fixed;
-    top: 8vh;
+    top: 7vh;
     left: 0;
     right: 0;
     bottom: 0;
@@ -657,10 +658,10 @@ button.accordianbutton.active::after{
     padding: 2vh 5vw;
     overflow: hidden;
     display: none;
-    transition: ease-in 1s;
 } 
 .accordiancontent.active{
     display: block;
+    max-height: 100%;
     transition: ease-in 1s;
 }
 

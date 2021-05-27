@@ -43,7 +43,7 @@ acc.forEach((acc) => {
 const cart = document.querySelector("aside");
 const toggle = document.querySelector(".sbagtoggle");
 const tricart= document.querySelector(".tricont");
-const menu = document.querySelector(".mobile");
+const menu = document.querySelector(".nav-mobile");
 const classesmenu = menu.classList;
 const result = classesmenu.contains("active");
 const answer = cart.classList.remove("toggle");
@@ -57,8 +57,9 @@ toggle.addEventListener('click',()=>{
     tricart.classList.toggle("toggle");
 })
 
-
-
+document.querySelector('.menuforresponsive').addEventListener('click',()=>{
+    cart.classList.remove("toggle");
+})
 
 
 
