@@ -61,10 +61,23 @@ document.querySelector('.menuforresponsive').addEventListener('click',()=>{
     cart.classList.remove("toggle");
 })
 
+ var searchfortablet = document.querySelector(".searchnav").addEventListener;
+var searchtargetclass= document.querySelector(".searchbarsmallmenu");
+var closesearchbutton = document.querySelector(".cbf").addEventListener;
 
-
-
-
+ function search(){
+      searchtargetclass.classList.toggle('active');
+       document.querySelector(".textf").classList.toggle('active');
+        document.querySelector(".cbf").classList.toggle('active');
+        document.querySelector(".whitecont").classList.toggle('active');
+        document.querySelector(".searchpagecont").classList.toggle("active");
+        document.querySelector(".opp").classList.toggle("active");
+        document.querySelector(".parasp").classList.toggle("active");
+        let list=document.querySelectorAll('.searchpageul li');
+        for(i=0;i<list.length;i++){
+            list[i].classList.toggle('active');
+        }
+ }
 
 
 
@@ -94,6 +107,4 @@ if(cart.classList.contains("toggle")){
 } else {
     tricart.style.display="block";
 } */
-
-
 

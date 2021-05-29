@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 *,*::after,*::before{
     margin: 0;
     padding: 0;
@@ -14,8 +18,7 @@ html{
     z-index: 1;
 }
 header{
-    overflow: hidden;
-    
+    overflow: hidden;  
 }
 .top-navlinks{
     width: 100%;
@@ -197,7 +200,7 @@ aside.active{
     color: black;
     padding: 20px;
     text-align: center;
-    margin-top: 8vh;
+    margin-top: 1vh;
 }
 
 
@@ -718,6 +721,9 @@ button.accordianbutton.active::after{
     border-right: 1px solid rgb(152, 152, 160);;
 }
 
+.listheader{
+    display: none;
+}
 /* .footerulli.oneli{
 } */
 
@@ -746,3 +752,695 @@ button.accordianbutton.active::after{
     text-decoration: none;
     color: rgb(116,116,119);
 }
+
+.cbf{
+    display: none;
+}
+
+@media (min-width: 780px) {
+    .searchbarsmallmenu{
+        position: fixed;
+        top: 0;
+        left: 100vw;
+        margin: 0;
+        width: 100%;
+        border-radius: 0 !important;
+        z-index: 99997 !important;
+        transition: ease-in .60s;
+    }
+    .searchbarsmallmenu.active{
+        left: 0;
+        transition: ease-out .60s;
+    }
+
+    .top-navlinks{
+        width: 100%;
+        overflow: hidden;
+        position: fixed;
+        backdrop-filter: blur(30px) contrast(.8);
+        top: 0;
+        height: 7vh;
+        z-index: 99995;
+    }
+
+    .ul.nav-mobile{
+        display: block;
+        height:7vh;
+        width: 100%;
+    }
+    .nav{
+        display:block;
+        
+    }
+    .menuforresponsive,.mobilemenuresponsive{
+        display: none;
+    }
+
+    .mobile-applelogo{
+        background-position: center;
+        height: 7vh;
+        width: 4vw;
+    }
+    .mobile-applebag{
+        position: relative;
+        bottom: 7vh;
+        left: 95vw;
+        height: 7vh;
+        margin-right: 0;
+        width: 3vw;
+    }
+
+    .mobile.menunavlinks{
+        display: block;
+        max-height: 0;
+        background-color: transparent !important;
+        
+    }
+   
+    .fa-search{
+        position: relative;
+        left: 30vw;
+        bottom: 1vh;
+        font-size: 1.7rem;
+    }
+    
+    .textf{
+        position: fixed;
+        width: 30%;
+        left: 100vw;
+        top: 1vh;
+        font-size: 1.7rem;
+        opacity: 0;
+        transition: ease-out .70s;
+    }
+
+    .textf.active{
+        left: 38vw;
+        opacity: 1;
+        transition: opacity 1s;
+    }
+
+    .mobilemenu{
+        display: flex;
+        position: fixed;
+        top: 1vh;
+        left: 1vw;
+        margin: 0;
+        padding: 0;
+        height: 5vh;
+        border:none;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+    .navmenulinkssmall{
+        margin: 0 35px;
+        padding: 0;
+        border-top: none;
+    }
+    .searchnav{
+    position: fixed;
+    left: 85vw;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    
+    }
+
+    .iconsn{
+        position: fixed;
+        height: fit-content;
+        top: 2.3vh;
+        font-size: 2rem;
+        left: 85vw;
+    }
+    .sbagtoggle{
+        position: fixed;
+        top: 2vh;
+        left: 96vw;
+    }
+    .tricont{
+        top: 6.9vh;
+        left: 4.5vw;
+    }
+    aside{
+        position: fixed;
+        top: 7vh;
+        margin-right: 10px;
+        width: 30%;
+        border-radius: 10px;
+        box-shadow: 2px 2px 20px black ;
+    }
+    ul.scul{
+        padding: 0;
+    }
+    .headert{
+        margin-top: 7vh;
+    }
+    .ipadpro{
+        background: url(ipadmedium.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .iphone12{
+        background: url(i12medium.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .imac{
+        background: url(imacmedium.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .gridcontainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 2fr 2fr;
+        gap: 12px 12px;
+    }
+    .ipprivacy{
+        border-bottom: 0;
+    }
+    .iphone12pro{
+        height: 82vh;
+        border-bottom: 0;
+    }
+    .applewatch{
+        height: 82vh;  
+    }
+
+    .watchapple::before{
+        position: relative;
+        left: 2.7vw;
+    }
+
+    .main.trade{
+        height: 82vh;
+    }
+    .applecard{
+        height: 72vh;
+    }
+
+    .cardapple{
+        position: relative;
+        left: 2.7vw;
+    }
+
+    .cardtext{
+        position: relative;
+        top: 3vh;
+        right: 3vw;
+    }
+    .tvprologo::before{
+        position: relative;
+        right: 20vw;
+    }
+    .tvheader{
+        left: 19vw;
+    }
+    .footertext{
+        font-size: 1.5rem;
+        padding: 0 20px;
+    }
+    .accordian{
+        display: flex;
+        justify-content: space-between;
+    }
+    .accordianbutton{
+        display: none;
+    }
+    .accordiancontent{
+        display: block;
+        padding: 0;
+        margin: 2vh 1vw;
+    }
+    .accordiancontent>ul>li>a{
+        font-size: 1rem;
+    }
+    .listheader{
+        display: block;
+    }
+    .footernav{
+        display: flex;
+        flex-direction: row;
+        font-size: 1.4rem;
+    }
+    .footerpone{
+        font-size: 1.4rem;
+    }
+    
+  .footerlinksul{
+     font-size: 1.4rem;
+
+    }
+    span.footerpone{
+        flex: 3;
+        align-self: center;
+        
+    }
+    span.footerptwo{
+        flex: 2;
+        align-self: center;
+        text-align: center;
+    }
+    span.footerpthree{
+        flex: 2;
+        align-self: center;
+    }
+    .cbf{
+        display: block;
+        position: fixed;
+        top: 3vh;
+        left: 70vw;
+        height: 2vh;
+        width: 2vw;
+        opacity: 0;
+        transition: ease-out .70s;
+    }
+
+    .cbf.active{
+        opacity: 1;
+        transition: ease-in 1s;
+    }
+
+    .closebtn{
+        width: 20px;
+        height: 1px;
+        background-color: rgb(112,112,112);
+    }
+    .closebtn.bottomline{
+        transform: rotate(-45deg);
+    }
+    .closebtn.topline{
+        margin-bottom: 2px;
+        transform: rotate(45deg);
+    }
+}
+
+@media (min-width:1520px){
+    a:hover{
+        text-decoration: underline;
+    }
+    .ipadpro{
+        background: url(ipadherolarge.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .iphone12{
+        background: url(i12large.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .imac{
+        background: url(imaclarge.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+     .top-navlinks{
+      height: 6vh;
+    }
+    
+    .mobile-applelogo{
+        left: 16vw;
+        bottom: .5vh;
+        background-size: 30%;
+    }
+    .mobile-applebag{
+        left: 75vw;
+        bottom: 6.5vh;
+        background-size: 20%;
+        width: 5vw;
+        height: 5vh;
+    }
+
+    .sbagtoggle{
+        top: 1vh;
+        left: 78.4vw;
+        height: 4vh;
+        width: 2vw;
+    }
+    .mobilemenu{
+        width: 50%;
+        height: 6vh;
+        top: 0;
+        left: 22vw;
+    }
+    .iconsn{
+        color: rgb(171, 171, 177) !important;
+        left: 74vw;
+        margin-top: 1vh;
+        font-size: 5.8rem;
+    }
+
+    .iconsn:hover{
+        color: white !important;
+    }
+    
+    .navmenulinkssmall a{
+        color: rgb(171, 171, 177) !important;
+        font-size: 6rem;
+        font-weight: lighter;
+        margin: 0 1.5vw;
+    }
+    .navmenulinkssmall a:hover{
+        color: white !important;
+    }
+
+    .searchbarsmallmenu.active{
+        height: 6vh;
+    }
+
+    .closebtn{ 
+        position: relative;
+        left: 1vw;
+        width: 1px;
+    }
+
+    .topline{
+        position: relative;
+        top: 0.50vh;
+        height: 71px;
+        margin: 0;
+    }
+    .bottomline{
+        position: relative;
+        bottom:1.90vh;
+        height: 71px;
+        margin: 0;
+    }
+    .cbf.active{
+        top: 1.2vh;
+        left: 68vw;
+        height: 3.8vh;
+    }
+    .textf.active{
+        font-size: 5.5rem;
+        top: 0;
+    }
+    .fa-search{
+        width: 2vw;
+        height: 4vh;
+        top: .90vh;
+        font-size: 6rem;
+    }
+
+    .headertext{
+        font-size: 5rem;
+        height: 13vh;
+    }
+    .headert{
+        margin-top: 7.5vh;
+        font-size: 5.5rem;
+    }
+    .ipadpro1{
+        font-size: 20rem;
+    }
+    .ipadpro2{
+        font-size: 10rem;
+    }
+    .ipadlinks{
+        margin-top: 1vh;
+    }
+    .ipadlinks a{
+        font-size: 8rem;
+        margin-right: 3vw;
+    }
+    .gg-chevron-right {
+        box-sizing: border-box !important;
+        position: relative !important;
+        display: block !important;
+        transform: scale(var(--ggs,1)) !important;
+        width: 50px !important;
+        height: 105px !important;
+        border: 2px solid transparent !important;
+        border-radius: 100px !important;
+    }
+
+    .gg-chevron-right::after {
+        content: "" !important;
+        display: block !important;
+        box-sizing: border-box !important;
+        position: absolute !important;
+        width: 30px !important;
+        height: 30px !important;
+        border-bottom: 2px solid !important;
+        border-right: 2px solid !important;
+        transform: rotate(-45deg) !important;
+        right: 6px !important;
+        top: 44px !important;
+    }
+    
+    .head12{
+        font-size: 20rem;
+    }
+    .subhead12{
+        font-size: 10rem;
+    }
+    .sub12{
+        font-size: 7rem;
+       
+    }
+
+/* .sub12b{
+        
+    } */
+    
+    .headerimac{
+        font-size: 20rem;
+    }
+    
+    .imacsub{
+        font-size: 10rem;
+    }
+    .ipprivacy{
+        background-size: 110vh;
+    }
+    .headerpri{
+        font-size: 18rem;
+    }
+    
+    .headerwatch{
+        font-size: 15rem;
+        text-transform: uppercase;
+        font-weight: normal;
+        margin-left: 2px;
+    }
+    #watchlogo{
+        font-size: 13rem;
+    }
+    .redsub{
+        font-size: 6rem;
+    }
+    .subwatch{
+        font-size: 10rem;
+    }
+    .tradeheader.one
+    {
+        font-size: 15rem;
+    }
+    .tradeheader.ttwo{
+        font-size: 7rem;
+    }
+
+    .applecard{
+        height: 82vh;
+    }
+
+    .headeracard{
+        font-size: 20rem;
+        margin-left: 2px;
+        font-weight: normal;
+    }
+    .cardapple{
+        font-size: 16rem;
+    }
+    .subacard{
+        font-size: 7rem;
+    }
+    .tvheader{
+        font-size: 18rem;
+        font-weight: normal;
+    }
+    .tvprologo::before{
+        position: relative;
+        right: 19vw;
+        bottom: 1vh;
+        font-size: 10rem;
+    }
+    
+    .appletvplus{
+        background-size: 150vh;
+        height: 82vh;
+    }
+
+    .tvprofooter a{
+        font-size: 7rem;
+        position: relative;
+        top: 5vh;
+    }
+    .fa-play-circle:before{
+        position: relative;
+        right: 1vw;
+        font-size: 7rem;
+    }
+
+    footer, footer a{
+        font-size: 4rem;
+    }
+    .accordian{
+        padding: 0 10vw;
+    }
+    .footertext{
+        padding: 1vh 10vw
+    }
+    .footertext>span{
+        font-size: 4rem;
+        margin: 2vh 0;
+    }
+    li.accordiansulli>a{
+        font-size: 4rem !important;
+    }
+    .footerpone{
+        font-size: 4rem;
+    }
+    .footerptwo{
+        font-size: 4rem;
+        position: relative;
+        top: 5.75vh;
+        left: 25vw;
+    }
+    .footerpthree{
+        position: relative;
+        right: 56.5vw;
+        top: 5.75vh;
+        font-size: 4rem;
+    }
+    .footerlinksul li a{
+        font-size: 4rem;
+    }
+    .footernav{
+        margin: 2vh 10vw;
+        border-bottom: 1px solid rgb(226, 226, 235);
+    }
+    .footerlinks{
+        position: relative;
+        left: 20vw;
+        width: 60%;
+        padding: 0 10vw;
+        margin-bottom: 5vh;
+    }
+    aside{
+        left: 67vw;
+        top: 6vh;
+        width: 20%;
+        height: 43vh;
+        border-radius: 50px;
+        box-shadow: 0 0 0;
+        border:1px solid rgb(208, 208, 214)
+    }
+    .shoppingcarttriangle{
+        bottom: 1.5vh;
+        height: 28px;
+        width: 25px;
+        right: 23.50vw;
+    }
+    .scsecone{
+        font-size: 7rem;
+    }
+    .sculli a{
+        font-size: 5rem;
+    }
+
+    #bagsvg{
+    height: 68px;
+    width: 110px;
+    }
+
+    .searchpagecont{
+        position: fixed;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.603);    
+        height: 100vh;
+        z-index: 99998;
+        display: none;
+    }
+    .searchpagecont.active{
+        display: block;
+    }
+    
+    .whitecont{
+        position: fixed;
+        top: 6vh;
+        left: 28vw;
+        width: 45%;
+        height: 30vh;
+        background: white;
+        border-radius: 0 0 50px 50px;
+        color: black;
+        display: none;
+    }
+
+    .whitecont.active{
+        display: block;
+    }
+
+    .whitecont>p{
+        position: relative;
+        top: 4vh;
+        left: 5vw;
+        font-size: 5rem;
+        text-transform: uppercase;
+        color: rgb(152, 152, 160);
+    }
+    .whitecont>ul{
+        position: relative;
+        top: 6vh;
+        font-size: 5rem;
+        width: 100%;
+    }
+    .whitecont>ul>li{
+        margin: 2vh 0;
+        list-style: none;
+        padding: 0 6vw;
+    }
+    .whitecont>ul>li>a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .iconsn{
+        opacity: 1 !important;
+    }
+
+    .opp{
+        opacity: 1;
+    }
+
+    .opp.active{
+        opacity: 0;
+        transition: opacity .50s;
+    }
+
+    li.searchpage{
+        position: relative;
+        left:100vw;
+    }
+
+    .parasp{
+        position: relative;
+        left: 100vw;
+    }
+    
+    li.searchpage.active{
+        left: 0;
+        transition: position 1s;
+    }
+
+    .parasp.active{
+        left: 5vw;
+        transition: position 1s;
+    }
+ }
