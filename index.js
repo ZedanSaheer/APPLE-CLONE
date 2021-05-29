@@ -77,34 +77,4 @@ var closesearchbutton = document.querySelector(".cbf").addEventListener;
         for(i=0;i<list.length;i++){
             list[i].classList.toggle('active');
         }
- }
-
-
-
-
-
-
-/* if(result && toggle){
-    cart.style.display="none";
-} else {
-    cart.style.display="none";
-}
-
-if(result && toggle){
-    tricart.style.display="none";
-} else {
-    tricart.style.display="none";
-} */
-
-/* if(cart.classList.contains("toggle")){
-    cart.style.display="none";
-} else {
-    cart.style.display="block"
-}
-
-if(cart.classList.contains("toggle")){
-    tricart.style.display="none";
-} else {
-    tricart.style.display="block";
-} */
-
+    }

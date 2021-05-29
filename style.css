@@ -1037,7 +1037,7 @@ button.accordianbutton.active::after{
     }
 }
 
-@media (min-width:1520px){
+@media (min-width:1120px){
     a:hover{
         text-decoration: underline;
     }
