@@ -73,7 +73,9 @@ var closesearchbutton = document.querySelector(".cbf").addEventListener;
         document.querySelector(".searchpagecont").classList.toggle("active");
         document.querySelector(".opp").classList.toggle("active");
         document.querySelector(".parasp").classList.toggle("active");
+       
         let list=document.querySelectorAll('.searchpageul li');
+        
         for(i=0;i<list.length;i++){
             list[i].classList.toggle('active');
         }
